@@ -38,7 +38,7 @@ while True:
     prompt = get_user_message(prompt)
     response = get_gpt3_response(prompt, history)
 
-    message_resp = response["choices"][0]["message"]
+    message_resp = list(response["choices"])[0].to_dict()["message"]
     print(f'Reply: {message_resp["content"]}')
     print(f'Usage: {response["usage"]}')
     print("\n\n")
