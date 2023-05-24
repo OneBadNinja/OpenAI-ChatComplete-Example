@@ -1,6 +1,6 @@
 import openai
 import os
-import lorem
+
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
 
